@@ -1,0 +1,14 @@
+<form class="form_box center" action="/users/<%="#{current_user.id}/blogs/#{@blog.id}"%>" method="post">
+      <input type="hidden" name="_method" value="delete" />
+      <div class="form">
+        Blog Title
+        <p><%= @blog.title %></p>
+      </div>
+      <div class="form">
+        Blog Content
+        <p><%= @blog.body%></p>
+      </div>
+      <div class="form">
+        <input type="submit" value="Delete Entry"/>
+      </div>
+    </form>

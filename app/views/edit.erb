@@ -1,0 +1,22 @@
+<div class="center clear">
+    <% @blog.errors.full_messages.each do |error| %>
+      <p class="error_message"><%= error %></p>
+    <% end  %>
+  </div>
+  <div>
+    <form class="form_box center" action="/users/<%="#{current_user.id}/blogs/#{@blog.id}"%>" method="post">
+      <input type="hidden" name="_method" value="put" />
+      <div class="form">
+        Edit Blog Title
+        <input type="text" name="title" value= "<%= @blog.title %>"/>
+      </div>
+      <div class="form">
+        Edit Blog Content
+        <textarea type="text" name="body"><%= @blog.body%></textarea>
+      </div>
+      <div class="form">
+        <input type="submit" value="Edit Blog!!!"/>
+      </div>
+    </form>
+  </div>
+</div>

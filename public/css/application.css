@@ -1,0 +1,55 @@
+/** {
+  border: 1px dotted red;
+}*/
+
+.center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear:both;
+}
+
+.form_box {
+  padding-top: 10px;
+  width: 200px;
+  margin: auto;
+}
+.form {
+  text-align: left;
+  margin:10px 0;
+}
+
+.form_button {
+
+}
+
+a {
+  padding: 5px;
+  margin: 0 10px;
+  color: black;
+  border: 2px grey solid;
+}
+
+container {
+  margin: auto;
+  text-align: center;
+  border: 1px dotted black;
+}
+
+.error_message {
+  color: red;
+  font-weight: bold;
+}
+
+.blog_buttons {
+  padding-top: 30px;
+}
